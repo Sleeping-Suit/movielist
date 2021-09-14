@@ -22,13 +22,13 @@
 <body>
 
     <div class="container m_tm_20">
-        <h1>현재온도: {{temps}}˚C</h1>
+        <h1>현재온도: {{temp}}˚C</h1>
         <table class="table">
             <thead>
                 <tr>
                     <th>사진</th>
-                    <th>평점</th>
                     <th>영화제목</th>
+                    <th>평점</th>
                     <th>요약</th>
                 </tr>
             </thead>
@@ -36,8 +36,8 @@
                 {% for movie in movies %}
                 <tr>
                     <td><img src="{{movie.small_cover_image}}" ></td>
-                    <td>{{movie.rating}}</td>
                     <td>{{movie.title}}</td>
+                    <td>{{movie.rating}}</td>
                     <td>{{movie.summary}}</td>
                 </tr>
                 {% endfor %}
